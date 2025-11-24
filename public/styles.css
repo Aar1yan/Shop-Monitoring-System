@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+.sidebar {
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.nav-link.active {
+    background-color: #1e40af;
+    color: white;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid #e5e7eb;
+}
+
+th {
+    background-color: #e0f2fe;
+    padding: 12px;
+    font-weight: 600;
+}
+
+td {
+    padding: 12px;
+    background-color: #f9fafb;
+}
+
+input, select {
+    transition: border-color 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#app {
+    background: linear-gradient(135deg, #f3f4f6, #ffffff);
+}
+
+/* Status Labels */
+.status-in-stock {
+    background-color: #d1fae5;
+    color: #065f46;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.875rem;
+    display: inline-block;
+}
+
+.status-low-stock {
+    background-color: #fef3c7;
+    color: #92400e;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.875rem;
+    display: inline-block;
+}
+
+.status-out-of-stock {
+    background-color: #fee2e2;
+    color: #991b1b;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.875rem;
+    display: inline-block;
+}
+
+.status-completed {
+    background-color: #d1fae5;
+    color: #065f46;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.875rem;
+    display: inline-block;
+}
+
+.status-pending {
+    background-color: #fef3c7;
+    color: #92400e;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.875rem;
+    display: inline-block;
+}
+
+.status-refunded {
+    background-color: #e2e8f0;
+    color: #4b5563;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.875rem;
+    display: inline-block;
+}
+
+/* Modal */
+#add-product-modal {
+    z-index: 1000;
+}
